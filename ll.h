@@ -143,7 +143,7 @@ void printList( LLPtr currentPtr )
 void printListR( LLPtr currentPtr )//not finish
 {
    if ( isEmpty( currentPtr ) ) {
-     }  return;
+     return;} 
    while ( currentPtr->nextPtr!= NULL ) {
          currentPtr = currentPtr->nextPtr;
       }
