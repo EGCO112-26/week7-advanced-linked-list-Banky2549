@@ -104,7 +104,7 @@ int deletes( LLPtr *sPtr, int value )
          tempPtr = currentPtr;
          previousPtr->nextPtr = currentPtr->nextPtr;
          if(currentPtr!=NULL)
-         currentPtr->nextPtr->pPtr=previousPtr;
+         {currentPtr->nextPtr->pPtr=previousPtr;}
          free( tempPtr );
          return value;
       } // end if
