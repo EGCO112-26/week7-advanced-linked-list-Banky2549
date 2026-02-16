@@ -23,8 +23,8 @@ int main( void )
             printf( "%s", "Enter id and name: " );
             scanf( "%d %s", &item ,name);
             insert( &startPtr, item ,name ); // insert item in list
-            printList( startPtr );
-            printListR( startPtr );
+            printList(startPtr);
+            printListR(startPtr);
             break;
          case 2: // delete an element
             // if list is not empty
@@ -35,8 +35,8 @@ int main( void )
                // if character is found, remove it
                if ( deletes( &startPtr, item )==item ) { // remove item
                   printf( "%d deleted.\n", item );
-                  printList( startPtr );
-                  printListR( startPtr );
+                  printList(startPtr);
+                  printListR(startPtr);
                } // end if
                else {
                   printf( "%d not found.\n\n", item );
