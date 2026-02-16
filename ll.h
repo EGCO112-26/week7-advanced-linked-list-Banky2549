@@ -103,7 +103,7 @@ int deletes( LLPtr *sPtr, int value )
       if ( currentPtr != NULL ) {
          tempPtr = currentPtr;
          previousPtr->nextPtr = currentPtr->nextPtr;
-         if(currentPtr!=NULL)
+         if(currentPtr->nextPtr!=NULL)
          {currentPtr->nextPtr->pPtr=previousPtr;}
          free( tempPtr );
          return value;
